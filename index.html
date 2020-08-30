@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annual Budget</title>
+    <!-- Font File -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rowdies:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div id="top-section">
+          <h1 class="budget-title">
+            Available Budget in <span class="month">Month</span>
+          </h1>
+          <div class="total-budget py-2">0</div>
+          <div class="income">
+            <p class="p-1">
+              <span>Income</span>
+              <span class="total-income-details">
+                <span class="total-income-amt"> 0 </span>
+                <span class="total-income-percentage">&nbsp;&nbsp; &nbsp;</span>
+              </span>
+            </p>
+          </div>
+          <div class="expense">
+            <p class="p-1">
+              <span>Expense</span>
+              <span class="total-expense-details">
+                <span class="total-expense-amt"> 0 </span>
+                <span class="total-expense-percentage">-----</span>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div id="middle-section" class="p-1">
+          <select name="" id="" class="add-type p-1">
+            <option value="inc" selected>+</option>
+            <option value="exp">-</option>
+          </select>
+          <input
+            type="text"
+            class="selector-detail p-05"
+            placeholder="Add Description"
+          />
+          <input type="number" class="input-value p-05" placeholder="Value" />
+          <button class="btn">
+            <i class="bx bx-check-circle"></i>
+          </button>
+        </div>
+        <div id="bottom-section" class="p-1">
+          <div class="income-detail p-1">
+            <h1>Income :</h1>
+            <ul class="income-list">
+              <!-- <li id="income-id">
+                            <span class="income-description">Description 1</span>
+                            <span class="income-value">
+                                <span class="income-amt">12000 </span>
+                                <i class='bx bx-x-circle delete-btn'></i>
+                            </span>
+                        </li> -->
+            </ul>
+          </div>
+          <div class="expense-detail p-1">
+            <h1>Expenses :</h1>
+            <ul class="expense-list">
+              <!-- <li id="expense-id">
+                            <span class="expense-description">Description 1</span>
+                            <span class="expense-value">
+                                <span class="expense-amt">+ 2,000.65 </span>
+                                <span class="expense-percentage">45%</span>
+                                <i class='bx bx-x-circle delete-btn'></i>
+                            </span>
+                        </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

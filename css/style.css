@@ -1,0 +1,212 @@
+:root{
+    --primary-color: #32ADAD;
+    --secondary-color: #FF544E;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Rowdies', cursive; */
+}
+html{
+    font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(40deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/bg-img.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+/* Utility*/
+.py-2{padding: 2rem 0;}
+.py-1{padding: 1rem 0;}/* not used */
+.p-1{padding: 1rem;}
+.p-05{padding: .5rem;}
+.my-2{margin: 2rem 0;}/* not used */
+
+.container{
+    max-width: calc(100vw-20vw);
+    padding: 2rem;
+    margin: auto;
+
+}
+#top-section{
+    color: white;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+#top-section .budget-title{
+    font-family: 'Rowdies', cursive;
+    font-size: 4.5rem;
+    letter-spacing: .5rem;
+}
+#top-section .total-budget{
+    font-size: 4rem;
+}
+#top-section .income p,
+#top-section .expense p{
+    background: var(--primary-color);
+    max-width: 40rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 2px;
+}
+#top-section p .total-income-details,
+#top-section p .total-expense-details{
+    display: flex;
+    align-items: center;
+}
+#top-section p .total-income-percentage,
+#top-section p .total-expense-percentage{
+    font-size: 1.2rem;
+    letter-spacing: initial;
+    margin-left: .5rem;
+    padding: .4rem;
+    border-radius: 2px;
+}
+#top-section .expense p{
+    background: var(--secondary-color);
+    margin-top: 1rem;
+}
+#top-section p .total-expense-percentage{
+    background: #FF8B87;
+}
+/* Middle Part */
+#middle-section{
+    background: #F3F6F7;
+    max-width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+#middle-section .selector-detail,
+#middle-section .input-value {
+    width: 25rem;
+    font-size: 2rem;
+}
+#middle-section .input-value{
+    width: 10rem;
+}
+
+#middle-section button{
+    /* border: 2px solid #7ACACA; */
+    /* border-radius: 2px; */
+    border:none;
+    background: #F3F6F7;
+}
+#middile-section button:hover,
+#middle-section button:focus{
+    outline: none;
+}
+#middle-section button:active{
+
+}
+#middle-section .btn i{
+    font-size: 3.6rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* #middle-section .selector select option{
+    border: 2px solid var(--primary-color);
+} */
+#middle-section  select,
+#middle-section  select:focus,
+#middle-section  input:focus,
+#middle-section .input-value input:focus{
+    border: .2rem solid var(--primary-color);
+    outline: none;
+}
+
+
+/* Bottom-Section */
+#bottom-section {
+    display: flex;
+    background: #F3F6F7;
+    justify-content: space-between;
+    max-width: 65%;
+    /* max-height: 22rem; */ /* can have designer-scroll in each of the list */
+    min-height: 21rem;
+    margin: auto;
+    border-radius: .5rem;
+    flex: 1;
+}
+#bottom-section .income-detail,
+#bottom-section .expense-detail{
+    width: 38rem;
+    background: #fff;
+    box-shadow: 0 0 10px 5px #C8CDD2;
+    border-radius: .5rem ;
+}
+#bottom-section .income-detail h1,
+#bottom-section .expense-detail h1{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+#bottom-section .expense-detail h1{
+    color: var(--secondary-color);
+}
+#bottom-section .income-detail  ul li,
+#bottom-section .expense-detail ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    border-bottom: .1rem solid #bdc3c7;
+    color: #636e72;
+    padding:.5rem  ;
+    overflow: hidden;
+}
+#bottom-section .income-detail ul li:nth-child(even),
+#bottom-section .expense-detail ul li:nth-child(even){
+        background: #F3F6F7;
+}
+#bottom-section .income-detail ul .income-value{
+    color: var(--primary-color);
+}
+#bottom-section .expense-detail ul .expense-value{
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+}
+#bottom-section .expense-detail ul .expense-value .expense-percentage{
+    font-size: 1.2rem;
+    background: #FFDCDB;
+    margin-left: 1rem;
+    padding: .4rem;
+    border-radius: 2px;
+}
+#bottom-section .income-detail .income-value i,
+#bottom-section .expense-detail .expense-value i{
+    cursor: pointer;
+    opacity: 0;
+    margin-right: -.5rem;
+    transition: all ease .5s;
+}
+#bottom-section .income-detail  ul li:hover .income-value i,
+#bottom-section .expense-detail ul li:hover .expense-value i{
+    margin-left: 2rem ;
+    margin-right: 0rem;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
